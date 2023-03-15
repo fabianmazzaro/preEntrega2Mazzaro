@@ -1,0 +1,28 @@
+/* reset */
+
+*{
+    /* estilos genéricos */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    background-image: url('../Img/Cielo.jpg');
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    /* filter: blur(5px); */
+  }
+  
+
+/* Que cambie el color de fondo cuando se pasa por la opción */
+.nav-item:hover .nav-link {
+    background-color: #d2e4f7;
+  }
+
+h1{
+    font-size: large;
+}
+  

@@ -1,0 +1,21 @@
+# Ignorar archivos y directorios específicos
+archivo.txt
+carpeta/
+
+# Ignorar archivos con una extensión específica
+*.log
+*.tmp
+
+# Ignorar todos los archivos en un directorio específico
+logs/*
+
+# Ignorar archivos generados por el sistema operativo o el entorno de desarrollo
+.DS_Store
+Thumbs.db
+*.bak
+*.swp
+
+# Ignorar archivos de compilación o construcción
+build/
+dist/
+target/

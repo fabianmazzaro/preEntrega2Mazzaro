@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-with, initial-scale=1.0" />
+    <title>Visitando lugares</title>
+    <link rel="stylesheet" href="./CSS/bootstrap.css" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <!-- relaciona la página de estilos -->
+  </head>
+  <body>
+    <!-- Agrego el menú hamburguesa -->
+    <nav class="navbar navbar-expand-lg sticky-top bg-light">
+      <div class="container-fluid">
+        <!-- Sobre mi nombre en el menú que vaya a contacto.html -->
+        <a class="navbar-brand" href="./Pages/contacto.html"
+          >Fabián E. Mazzaro</a
+        >
+        <button
+          class="navbar-toggler collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="navbar-collapse collapse"
+          id="navbarSupportedContent"
+          style=""
+        >
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html"
+                >Principal</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Pages/francia.html">Francia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Pages/italia.html">Italia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Pages/espania.html">España</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Pages/contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <h1 class="display-1 text-center">Visitando lugares</h1>
+
+    <!-- Para mobile que se muestren las 3 fotos juntas pero para desktop
+    que oculte el carrusel y muestre una foto por cada opción de los países -->
+
+    <div class="container">
+      <!-- Que el Carrusel quede oculto en resoluciones mobile -->
+      <div class="d-none d-md-block">
+        <div
+          id="carouselExampleInterval"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2000">
+              <img
+                src="./Img/francia-torre.jpg"
+                class="d-block w-100"
+                alt="Francia"
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img
+                src="./img/Italia-coliseo.jpg"
+                class="d-block w-100"
+                alt="Italia"
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img
+                src="./img/españa-bandera.jpg"
+                class="d-block w-100"
+                alt="España"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Que las imágenes se vean en resoluciones mobile -->
+      <div class="row d-md-none">
+        <div class="container-fluid p-5">
+          <!-- p-5 padding 5 -->
+          <div class="row gy-5">
+            <!-- Distancia vertical a 5 -->
+            <div class="col-lg-4">
+              <!-- en large c/col tiene 4 columnas y en mobile las 12  -->
+              <a href="./Pages/francia.html">
+                <!-- envuelvo la imagen para que sea clickeable -->
+                <img
+                  src="./Img/francia-torre.jpg"
+                  class="img-fluid"
+                  style="max-width: 100%; max-height: 100%"
+                  alt="Francia"
+                />
+              </a>
+            </div>
+
+            <div class="col-lg-4">
+              <a href="./Pages/italia.html">
+                <img
+                  src="./Img/italia-coliseo.jpg"
+                  class="img-fluid"
+                  style="max-width: 100%; max-height: 100%"
+                  alt="Italia"
+                />
+              </a>
+            </div>
+
+            <div class="col-lg-4">
+              <a href="./Pages/espania.html">
+                <img
+                  src="./Img/españa-bandera.jpg"
+                  class="img-fluid"
+                  style="max-width: 100%; max-height: 100%"
+                  alt="España"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/bootstrap.bundle.js"></script>
+  </body>
+</html>
