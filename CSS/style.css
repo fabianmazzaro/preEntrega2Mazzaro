@@ -22,7 +22,21 @@ body {
     background-color: #d2e4f7;
   }
 
+/* Títulos en letra grande */
 h1{
     font-size: large;
 }
-  
+
+.carousel-container{
+    width: 100%;
+}
+
+.carousel{
+    max-width: 780px;
+    margin: 0 auto;
+}
+
+TamanioFoto{
+    width: 100%;
+    /* height: 480px; */
+}

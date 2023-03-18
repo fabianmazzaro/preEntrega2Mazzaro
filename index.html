@@ -63,53 +63,62 @@
 
     <div class="container">
       <!-- Que el Carrusel quede oculto en resoluciones mobile -->
-      <div class="d-none d-md-block">
-        <div
-          id="carouselExampleInterval"
-          class="carousel slide"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="2000">
-              <img
-                src="./Img/francia-torre.jpg"
-                class="d-block w-100"
-                alt="Francia"
-              />
+      <div class="d-none d-md-block carousel-container">
+        <!-- Centrar el carousel -->
+        <div class="d-flex justify-content-center">
+          <div
+            id="carouselExampleInterval"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="2000">
+                <img
+                  src="./Img/francia-torre.jpg"
+                  class="d-block TamanioFoto"
+                  alt="Francia"
+                />
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img
+                  src="./Img/italia-coliseo.jpg"
+                  class="d-block TamanioFoto"
+                  alt="Italia"
+                />
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img
+                  src="./Img/españa-bandera.jpg"
+                  class="d-block TamanioFoto"
+                  alt="España"
+                />
+              </div>
             </div>
-            <div class="carousel-item" data-bs-interval="2000">
-              <img
-                src="./Img/italia-coliseo.jpg"
-                class="d-block w-100"
-                alt="Italia"
-              />
-            </div>
-            <div class="carousel-item" data-bs-interval="2000">
-              <img
-                src="./Img/españa-bandera.jpg"
-                class="d-block w-100"
-                alt="España"
-              />
-            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleInterval"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleInterval"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
           </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleInterval"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Anterior</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleInterval"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Siguiente</span>
-          </button>
         </div>
       </div>
 
