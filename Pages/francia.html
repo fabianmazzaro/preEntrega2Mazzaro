@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Francia</title>
-    <link rel="stylesheet" href="../CSS/style.css" />
-    <!-- relaciona la página de estilos -->
-    <link rel="stylesheet" href="../CSS/bootstrap.css" />
+    <title>Atracciones turísticas de Francia</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
   </head>
   <body>
-    <!-- Agrego el menú hamburguesa -->
+    <!-- Menú hamburguesa -->
     <nav class="navbar navbar-expand-lg sticky-top bg-light">
       <div class="container-fluid">
         <!-- Sobre mi nombre en el menú que vaya a contacto.html -->
@@ -44,9 +43,6 @@
               <a class="nav-link" href="./italia.html">Italia</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./espania.html">España</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="./contacto.html">Contacto</a>
             </li>
           </ul>
@@ -54,129 +50,158 @@
       </div>
     </nav>
 
-    <div id="arriba"></div>
-
-    <h1 class="display-1 text-center">Visitando lugares</h1>
-
-    <div class="container p-3">
-      <!-- Esta es la primera fila -->
-      <div class="row">
-        <!-- desktop 3 columna (col-lg-4)
-          medium 2 columnas (col-md-6) y 
-          mobile 1 columnas (col-12)-->
-        <div class="col col-lg-4 col-md-6 col-12 pb-3">
-          <!--(pb-3) padding 3 abajo para separar las cards-->
-
-          <div class="card border border-4">
-            <!-- border 4 -->
-            <img
-              src="../Img/fr-torre.jpg"
-              class="card-img-top img-fluid img-responsive"
-              alt="Torre Eiffel"
-            />
-            <div class="card-body">
-              <p class="card-text text-center">Torre Eiffel</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col col-lg-4 col-md-6 col-12 pb-3">
-          <div class="card border border-4">
-            <img
-              src="../Img/fr-arco.jpg"
-              class="card-img-top img-fluid img-responsive"
-              alt="Arco de Triunfo"
-            />
-            <div class="card-body">
-              <p class="card-text text-center">Arco de Triunfo</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col col-lg-4 col-md-6 col-12 pb-3">
-          <div class="card border border-4">
-            <img
-              src="../Img/fr-jardines.jpg"
-              class="card-img-top img-fluid img-responsive"
-              alt="Jardines Torre Eiffel"
-            />
-            <div class="card-body">
-              <p class="card-text text-center">Jardines Torre Eiffel</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col col-lg-4 col-md-6 col-12 pb-3">
-          <div class="card border border-4">
-            <img
-              src="../Img/fr-molino.jpg"
-              class="card-img-top img-fluid img-responsive"
-              alt="Moulin Rouge"
-            />
-            <div class="card-body">
-              <p class="card-text text-center">Moulin Rouge</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col col-lg-4 col-md-6 col-12 pb-3">
-          <div class="card border border-4">
-            <img
-              src="../Img/fr-colmar.jpg"
-              class="card-img-top img-fluid img-responsive"
-              alt="Colmar"
-            />
-            <div class="card-body">
-              <p class="card-text text-center">Colmar</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col col-lg-4 col-md-6 col-12 pb-3">
-          <div class="card border border-4">
-            <img
-              src="../Img/fr-museo.jpg"
-              class="card-img-top img-fluid img-responsive"
-              alt="Museo del Lovre"
-            />
-            <div class="card-body">
-              <p class="card-text text-center">Museo del Luvre</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col col-lg-4 col-md-6 col-12 pb-3">
-          <div class="card border border-4">
-            <img
-              src="../Img/fr-sacre.jpg"
-              class="card-img-top img-fluid img-responsive"
-              alt="Montmartre"
-            />
-            <div class="card-body">
-              <p class="card-text text-center">Montmartre</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col col-lg-4 col-md-6 col-12 pb-3">
-          <div class="card border border-4">
-            <img
-              src="../Img/fr-vista.jpg"
-              class="card-img-top img-fluid img-responsive"
-              alt="Vista de la Torre"
-            />
-            <div class="card-body">
-              <p class="card-text text-center">Vista de la Torre</p>
-            </div>
-          </div>
-        </div>
+    <div style="margin-top: 40px">
+      <!-- Encabezado -->
+      <div class="jumbotron pais">
+        <h1 class="text-center">Atracciones turísticas de Francia</h1>
+        <h4 class="text-center">Descubrí lo mejor del país galo</h4>
       </div>
-      <div class="row">
-        <div class="text-center">
-          <a href="#arriba">Ir arriba</a>
+
+      <div class="row justify-content-center">
+        <div class="col-md-3">
+          <div class="card">
+            <img src="../Img/fr-torre.jpg" class="card-img-top" alt="Torre Eiffel" />
+            <div class="card-body">
+              <h5 class="card-title">Torre Eiffel</h5>
+              <p class="card-text">
+                La Torre Eiffel es uno de los monumentos más icónicos de Francia
+                y una de las atracciones turísticas más populares del mundo.
+              </p>
+              <div class="collapse" id="torre-eiffel-descripcion">
+                <p class="card-text">
+                  Ubicada en el corazón de París, esta estructura de hierro
+                  forjado se eleva a 324 metros de altura, lo que la convierte
+                  en la estructura más alta de la ciudad.
+                </p>
+                <p class="card-text">
+                  Construida en 1889 por Gustave Eiffel para la Exposición
+                  Universal de París, la Torre Eiffel se ha convertido en un
+                  símbolo reconocido a nivel mundial de la ciudad de París y de
+                  Francia en general.
+                </p>
+                <p class="card-text">
+                  Además de ofrecer impresionantes vistas panorámicas de la
+                  ciudad, la torre cuenta con varios restaurantes, tiendas de
+                  regalos y atracciones turísticas en sus diferentes niveles.
+                </p>
+              </div>
+              <a
+                href="#torre-eiffel-descripcion"
+                class="btn btn-primary"
+                data-bs-toggle="collapse"
+                role="button"
+                aria-expanded="false"
+                aria-controls="torre-eiffel-descripcion"
+                >Leer más</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img src="../Img/fr-arco.jpg" class="card-img-top" alt="Arco de Triunfo" />
+            <div class="card-body">
+              <h5 class="card-title">Arco de Triunfo</h5>
+              <p class="card-text">
+                El Arco de Triunfo es uno de los monumentos más emblemáticos de
+                París, Francia. Fue construido entre 1806 y 1836.
+              </p>
+              <div class="collapse" id="arco-descripcion">
+                <p class="card-text">
+                  Durante el reinado de Napoleón Bonaparte, para conmemorar las
+                  victorias militares francesas y honrar a los soldados que
+                  lucharon y murieron por su país
+                </p>
+                <p class="card-text">
+                  Ubicado en la plaza Charles de Gaulle, en el extremo oeste de
+                  los Campos Elíseos, el Arco de Triunfo es una impresionante
+                  estructura de 50 metros de altura y 45 metros de ancho. Está
+                  decorado con relieves que representan batallas y escenas
+                  históricas importantes, así como con estatuas de personajes
+                  importantes de la historia francesa.
+                </p>
+                <p class="card-text">
+                  Desde la cima del Arco de Triunfo, los visitantes pueden
+                  disfrutar de impresionantes vistas panorámicas de la ciudad,
+                  incluyendo los Campos Elíseos, la Torre Eiffel y el horizonte
+                  de París. La plaza debajo del arco también es un lugar
+                  importante para ceremonias militares y celebraciones públicas
+                  en Francia.
+                </p>
+                <p class="card-text">
+                  Además de ofrecer impresionantes vistas panorámicas de la
+                  ciudad, la torre cuenta con varios restaurantes, tiendas de
+                  regalos y atracciones turísticas en sus diferentes niveles.
+                </p>
+              </div>
+              <a
+                href="#arco-descripcion"
+                class="btn btn-primary"
+                data-bs-toggle="collapse"
+                role="button"
+                aria-expanded="false"
+                aria-controls="arco-descripcion"
+                >Leer más</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img src="../Img/fr-museo.jpg" class="card-img-top" alt="Museo de Louvre" />
+            <div class="card-body">
+              <h5 class="card-title">Museo del Louvre</h5>
+              <p class="card-text">
+                "El Museo del Louvre es uno de los museos más grandes e
+                importantes del mundo, ubicado en el corazón de París, Francia.
+              </p>
+              <div class="collapse" id="museo-descripcion">
+                <p class="card-text">
+                  Originalmente construido en el siglo XII como una fortaleza,
+                  el edificio ha sido renovado y expandido a lo largo de los
+                  siglos para convertirse en uno de los tesoros culturales más
+                  importantes de la humanidad.
+                </p>
+                <p class="card-text">
+                  El Louvre es conocido por su colección de arte y antigüedades,
+                  que abarca desde la antigüedad hasta el siglo XIX. La
+                  colección incluye algunas de las obras más famosas y valiosas
+                  del mundo, como la Mona Lisa de Leonardo da Vinci, la Venus de
+                  Milo y la Victoria de Samotracia. Además, el museo también
+                  cuenta con importantes colecciones de arte egipcio, arte
+                  islámico y arte asiático.
+                </p>
+                <p class="card-text">
+                  El edificio del Louvre es en sí mismo una obra de arte
+                  arquitectónica, con su impresionante fachada de estilo
+                  renacentista y su famosa pirámide de vidrio en la entrada
+                  principal. El museo recibe millones de visitantes cada año,
+                  que vienen a admirar la belleza y la riqueza cultural de sus
+                  colecciones, así como para explorar las numerosas galerías y
+                  exposiciones especiales que ofrece el museo.
+                </p>
+              </div>
+              <a
+                href="#museo-descripcion"
+                class="btn btn-primary"
+                data-bs-toggle="collapse"
+                role="button"
+                aria-expanded="false"
+                aria-controls="museo-descripcion"
+                >Leer más</a
+              >
+            </div>
+          </div>
         </div>
       </div>
     </div>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+      <div class="container">
+        <p>© 2023 Atracciones turísticas en Francia e Italia</p>
+      </div>
+    </footer>
 
     <script src="../js/bootstrap.bundle.js"></script>
   </body>

@@ -1,0 +1,9 @@
+/* Hago un bucle indicando el font-size del h1 a h4
+Lo hago con una cuenta para que el h1 sea de 3rem 
+y luego de 0.5rem de diferencia cada uno del resto de los h */
+@for $i from 1 through 5 {
+    h#{$i} {
+      font-size: 1rem * (3.5-$i*0.5);
+    }
+  }
+  

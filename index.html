@@ -4,12 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE-edge" />
     <meta name="viewport" content="width=device-with, initial-scale=1.0" />
-    <title>Visitando lugares</title>
-    <link rel="stylesheet" href="./CSS/bootstrap.css" />
-    <link rel="stylesheet" href="./CSS/style.css" />
-    <!-- relaciona la página de estilos -->
+    <meta
+      name="description"
+      content="Este sitio web es para mostrar cierta atracciones turísticas
+    de Francia e Italia. Incluye los lugares más frecuentados por los turistas"
+    />
+    <meta name="keywords" content="Atracciones turísticas, Francia, Italia" />
+
+    <title>Atracciones turisticas</title>
+
+    <!-- Agrego el css de bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <!-- Agrego mi propio css que es el resultado de usar sass -->
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+
     <!-- Agrego el menú hamburguesa -->
     <nav class="navbar navbar-expand-lg sticky-top bg-light">
       <div class="container-fluid">
@@ -28,11 +38,7 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div
-          class="navbar-collapse collapse"
-          id="navbarSupportedContent"
-          style=""
-        >
+        <div class="navbar-collapse collapse">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="./index.html"
@@ -46,9 +52,6 @@
               <a class="nav-link" href="./Pages/italia.html">Italia</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./Pages/espania.html">España</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="./Pages/contacto.html">Contacto</a>
             </li>
           </ul>
@@ -56,117 +59,71 @@
       </div>
     </nav>
 
-    <h1 class="display-1 text-center">Visitando lugares</h1>
+    <!-- Dejo 40px para que quede abajo del menú hamburguesa -->
+    <div style="margin-top: 40px">
+      <div class="index">
+        <div class="jumbotron">
+          <h1 class="text-center">
+            Atracciones turísticas de Francia e Italia
+          </h1>
+          <h4 class="text-center">
+            Descubrí lo mejor de estos dos países europeos
+          </h4>
+        </div>
+      </div>
 
-    <!-- Para mobile que se muestren las 3 fotos juntas pero para desktop
-    que oculte el carrusel y muestre una foto por cada opción de los países -->
+      <!-- Contenido principal -->
+      <div class="container">
+        <div class="row justify-content-center d-flex">
+          <!-- Francia -->
 
-    <div class="container">
-      <!-- Que el Carrusel quede oculto en resoluciones mobile -->
-      <div class="d-none d-md-block carousel-container">
-        <!-- Centrar el carousel -->
-        <div class="d-flex justify-content-center">
-          <div
-            id="carouselExampleInterval"
-            class="carousel slide"
-            data-bs-ride="carousel"
-          >
-            <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="2000">
-                <img
-                  src="./Img/francia-torre.jpg"
-                  class="d-block TamanioFoto"
-                  alt="Francia"
-                />
-              </div>
-              <div class="carousel-item" data-bs-interval="2000">
-                <img
-                  src="./Img/italia-coliseo.jpg"
-                  class="d-block TamanioFoto"
-                  alt="Italia"
-                />
-              </div>
-              <div class="carousel-item" data-bs-interval="2000">
-                <img
-                  src="./Img/españa-bandera.jpg"
-                  class="d-block TamanioFoto"
-                  alt="España"
-                />
-              </div>
+          <!-- En dispositivos large que ocupe 6 de las 12 columnas
+          o sea que queden 2 columnas -->
+          <div class="col-lg-6">
+            <h2>Francia</h2>
+            <img
+              src="./Img/francia-torre.jpg"
+              alt="Francia"
+              class="img-fluid"
+            />
+            <p>
+              Francia es conocida por su cultura, su moda y su cocina, y es
+              hogar de algunos de los monumentos más famosos del mundo.
+            </p>
+            <div>
+              <!-- Acá uso mi-boton que cambia el color con el hover -->
+              <a href="./Pages/francia.html" class="mi-boton">Ver más</a>
             </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleInterval"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Anterior</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleInterval"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Siguiente</span>
-            </button>
+          </div>
+
+          
+          <div class="col-lg-6">
+            <h2>Italia</h2>
+            <img
+              src="./Img/italia-coliseo.jpg"
+              alt="Italia"
+              class="img-fluid"
+            />
+            <p>
+              Italia es uno de los destinos turísticos más populares del mundo,
+              conocida por su historia, su arte y su gastronomía.
+            </p>
+            <div>
+              <a href="./Pages/italia.html" class="mi-boton">Ver más</a>
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- Que las imágenes se vean en resoluciones mobile -->
-      <div class="row d-md-none">
-        <div class="container-fluid p-5">
-          <!-- p-5 padding 5 -->
-          <div class="row gy-5">
-            <!-- Distancia vertical a 5 -->
-            <div class="col-lg-4">
-              <!-- en large c/col tiene 4 columnas y en mobile las 12  -->
-              <a href="./Pages/francia.html">
-                <!-- envuelvo la imagen para que sea clickeable -->
-                <img
-                  src="./Img/francia-torre.jpg"
-                  class="img-fluid"
-                  style="max-width: 100%; max-height: 100%"
-                  alt="Francia"
-                />
-              </a>
-            </div>
-
-            <div class="col-lg-4">
-              <a href="./Pages/italia.html">
-                <img
-                  src="./Img/italia-coliseo.jpg"
-                  class="img-fluid"
-                  style="max-width: 100%; max-height: 100%"
-                  alt="Italia"
-                />
-              </a>
-            </div>
-
-            <div class="col-lg-4">
-              <a href="./Pages/espania.html">
-                <img
-                  src="./Img/españa-bandera.jpg"
-                  class="img-fluid"
-                  style="max-width: 100%; max-height: 100%"
-                  alt="España"
-                />
-              </a>
-            </div>
-          </div>
+      <!-- Pie de página -->
+      <footer class="footer">
+        <div class="container">
+          <p>© 2023 Atracciones turísticas en Francia e Italia</p>
         </div>
-      </div>
+      </footer>
     </div>
 
+    <!-- JavaScript de Bootstrap -->
     <script src="./js/bootstrap.bundle.js"></script>
   </body>
 </html>

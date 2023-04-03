@@ -1,0 +1,58 @@
+/* Cargo los archivos .scss con la instrucción @import */
+@import "partials/variables";
+@import "partials/bucles.scss";
+@import "partials/mixin.scss";
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Le pego una imagen el encabezado de la página index */
+.jumbotron {
+    background-image: url("../Img/Cielo.jpg");
+    background-size: cover;
+    color: $grisesito;
+}
+
+/* Esta clase pais es porque las páginas están dentro de /Pages entonces es distinto el acceso al jpg */
+.pais{
+    background-image: url("./Img/Cielo.jpg");
+    background-size: cover;
+    color: $grisesito;
+}
+
+/* Creo mi-boton usando lo que definí el mixin cambiando el color con el hover */
+.mi-boton {
+    @include boton;
+    background-color: $azul;
+    color: $blanco;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    &:hover{
+        background-color: $celestito
+    }
+  }
+
+/* Hago el nesting para que solo el h1 de contacto tome este estilo */
+.contacto{
+    .contacto-titulo{
+        background-color: $grisesito;
+    }
+}
+
+.titulo-parpadeo {
+    animation: parpadeo 2s linear infinite;
+  }
+  
+  @keyframes parpadeo {
+    50% {
+      opacity: 0;
+    }
+  }
+  
+  

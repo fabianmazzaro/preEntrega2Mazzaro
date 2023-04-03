@@ -1,0 +1,81 @@
+@charset "UTF-8";
+/* Cargo los archivos .scss con la instrucción @import */ /* Creo unas variables con los colores */ /* Hago un bucle indicando el font-size del h1 a h4
+Lo hago con una cuenta para que el h1 sea de 3rem 
+y luego de 0.5rem de diferencia cada uno del resto de los h */
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+/* Defino los datos que luego voy a usar en el scss para crear mi-boton */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Lato", sans-serif;
+}
+
+/* Le pego una imagen el encabezado de la página index */
+.jumbotron {
+  background-image: url("../Img/Cielo.jpg");
+  background-size: cover;
+  color: rgba(255, 255, 255, 0.631372549);
+}
+
+/* Esta clase pais es porque las páginas están dentro de /Pages entonces es distinto el acceso al jpg */
+.pais {
+  background-image: url("./Img/Cielo.jpg");
+  background-size: cover;
+  color: rgba(255, 255, 255, 0.631372549);
+}
+
+/* Creo mi-boton usando lo que definí el mixin cambiando el color con el hover */
+.mi-boton {
+  display: inline-block;
+  border: 1px solid #ccc;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.mi-boton:hover {
+  background-color: #5bb9ef;
+}
+
+/* Hago el nesting para que solo el h1 de contacto tome este estilo */
+.contacto .contacto-titulo {
+  background-color: rgba(255, 255, 255, 0.631372549);
+}
+
+.titulo-parpadeo {
+  animation: parpadeo 2s linear infinite;
+}
+
+@keyframes parpadeo {
+  50% {
+    opacity: 0;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

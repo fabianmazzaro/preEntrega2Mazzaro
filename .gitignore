@@ -19,3 +19,6 @@ Thumbs.db
 build/
 dist/
 target/
+
+# Ignorar los archivos del backup de los css
+backup-css/
