@@ -29,6 +29,7 @@ h5 {
   box-sizing: border-box;
   list-style: none;
   font-family: "Lato", sans-serif;
+  overflow-x: hidden;
 }
 
 /* Le pego una imagen el encabezado de la página index */
@@ -40,7 +41,7 @@ h5 {
 
 /* Esta clase pais es porque las páginas están dentro de /Pages entonces es distinto el acceso al jpg */
 .pais {
-  background-image: url("./Img/Cielo.jpg");
+  background-image: url("../Img/Cielo.jpg");
   background-size: cover;
   color: rgba(255, 255, 255, 0.631372549);
 }
@@ -69,13 +70,16 @@ h5 {
 }
 
 .titulo-parpadeo {
-  animation: parpadeo 2s linear infinite;
+  animation: parpadeo 4s linear infinite;
 }
 
 @keyframes parpadeo {
   50% {
     opacity: 0;
   }
+}
+.miestilo {
+  border-radius: 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */

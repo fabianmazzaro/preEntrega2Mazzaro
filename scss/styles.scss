@@ -10,6 +10,7 @@
     box-sizing: border-box;
     list-style: none;
     font-family: 'Lato', sans-serif;
+    overflow-x: hidden /* Le quito el scroll horizontal que apareciá indebidamente */
 }
 
 /* Le pego una imagen el encabezado de la página index */
@@ -21,7 +22,7 @@
 
 /* Esta clase pais es porque las páginas están dentro de /Pages entonces es distinto el acceso al jpg */
 .pais{
-    background-image: url("./Img/Cielo.jpg");
+    background-image: url("../Img/Cielo.jpg");
     background-size: cover;
     color: $grisesito;
 }
@@ -46,7 +47,7 @@
 }
 
 .titulo-parpadeo {
-    animation: parpadeo 2s linear infinite;
+    animation: parpadeo 4s linear infinite;
   }
   
   @keyframes parpadeo {
@@ -55,4 +56,8 @@
     }
   }
   
+  .miestilo{
+    border-radius: 10px;
+  }
+
   
